@@ -1,0 +1,24 @@
+td.Pass{
+text-align:center;
+background-color:green;
+color:white}
+td.Fail{
+text-align:center;
+background-color:red;
+color:black}
+td.Exception{
+text-align:center;
+background-color:yellow;
+color:red}
+th.Fatal{
+background-color:black;
+color:red}
+td.Stack{
+color:yellow;
+border:4px solid yellow}
+td.Imbalance1{
+border:1px solid yellow}
+td.Imbalance2{
+border:2px solid yellow}
+td.Imbalance3{
+border:3px solid yellow}
