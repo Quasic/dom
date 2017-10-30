@@ -227,6 +227,17 @@ for(i=0;i<container.length;i++)if(container[i]!==this)a.push(container[i]);
 container=a;
 x();
 };
+AppTabs.prototype.saveTabs=function(){var
+x=entero(this,"saveTabs",arguments),
+s="";
+
+return x(s);};
+AppTabs.prototype.restoreTabs=function(s){var
+x=entero(this,"restoreTabs",arguments);
+
+//this.run();
+
+x();};
 AppTabs.prototype.run=function(appid){var
 x=entero(this,"run",arguments),
 r=running[appid];
@@ -286,7 +297,7 @@ return x(true);
 };
 AppTabs.appMenu={};
 AppTabs.removeAllFrom=removeAll;
-AppTabs.loadApp=function(appid){try{return require("apps/"+appid+".js");}catch(e){alert('Error: App "'+appid+'" was not found.');throw e;}};
+AppTabs.loadApp=function(appid){try{return require("apps/"+appid+".js");}catch(e){alert('Error: App "'+appid+'" was not found. '+e.message);}};
 AppTabs.app={"New Tab":function(app){var
 x=entero(0,'AppTabs.app["New Tab"]',arguments);
 if(!app.param){app.container.run(app.id+"?"+arguments.callee.n++);return x();}
